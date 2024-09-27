@@ -10,13 +10,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 2;
 
   .modal {
     background-color: white;
     padding: 20px;
-    border-radius: 8px;
-    width: 800px;
+    border-radius: $border-radius;
+    width: 850px;
     max-width: 100%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 
@@ -24,7 +24,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #e3e3e3;
+      border-bottom: 1px solid $border-color;
       padding: 0 15px;
 
       .modal-close {
@@ -36,13 +36,17 @@
     }
 
     .modal-body {
+      display: flex;
+      gap: 30px;
+      padding: 15px 4px;
+      flex-wrap: wrap;
       margin-bottom: 15px;
     }
 
     .modal-footer {
       display: flex;
       justify-content: flex-end;
-      border-top: 1px solid #e3e3e3;
+      border-top: 1px solid $border-color;
       padding: 15px;
       .modal-controller {
         display: flex;
@@ -50,7 +54,7 @@
         gap: 10px;
         .modal-close {
           padding: 8px 16px;
-          border-radius: 4px;
+          border-radius: $border-radius;
         }
       }
     }

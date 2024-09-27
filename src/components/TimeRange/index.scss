@@ -1,0 +1,40 @@
+@import "../../styles/variables.scss";
+
+.time-range {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  text-align: center;
+  
+  .time-range__divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+    padding: 0 10px;
+    background-color: $dark-gray-color;
+    color: white;
+  }
+  
+  .time-range__value {
+    padding: 0 14px;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+
+    .rs-input {
+      width: 100%;
+      border: none;
+      padding: 11px 0;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

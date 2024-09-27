@@ -1,10 +1,14 @@
-import { Modal } from './components/Modal/Modal';
-import './styles/App.css';
+import { Modal } from "./components/Modal/Modal";
+import { useState } from "react";
+import "./styles/App.scss";
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className="app">
-      <Modal />
+      <Modal isOpen={true} onClose={() => {}}>
+        <div>Hello</div>
+      </Modal>
     </div>
   );
 }

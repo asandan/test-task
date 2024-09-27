@@ -1,0 +1,43 @@
+@import "../../styles/variables.scss";
+
+.counter {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+
+  .counter-value {
+    display: flex;
+    width: 75px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .counter-label {
+    display: flex;
+    align-items: center;
+    background-color: $light-gray-color;
+    width: 60px;
+    text-align: center;
+    white-space: wrap;
+    font-size: 12px;
+  }
+
+  .button {
+    color: white;
+    &.contained {
+      background-color: $primary-color;
+      border: none;
+
+      &:first-child {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+
+      &:last-child {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+      }
+    }
+  }
+}
