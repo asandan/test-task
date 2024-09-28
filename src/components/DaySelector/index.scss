@@ -22,7 +22,8 @@
       border-right: 1px solid $border-color;
     }
     &:hover {
-      background-color: $hover-color;
+      background-color: $primary-color;
+      color: white;
     }
 
     &.selected {

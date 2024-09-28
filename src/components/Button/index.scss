@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .button {
   padding: 10px 20px;
   border-radius: 4px;
@@ -8,8 +10,12 @@
   &.contained {
     background-color: transparent;
     color: black;
-    border: 2px solid #3A404D;
+    border: 2px solid #3a404d;
 
+    &:hover {
+      background-color: $button-hover-color;
+      color: white;
+    }
   }
 
   &.text {
